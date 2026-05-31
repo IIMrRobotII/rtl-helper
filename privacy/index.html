@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RTL Helper - Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy policy for the RTL Helper Chrome extension. Runs locally, stores only preferences, makes no network requests."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #1a1a1a;
+        --muted: #5a5f66;
+        --border: #e5e7eb;
+        --link: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0e1116;
+          --fg: #e6e8eb;
+          --muted: #9aa1aa;
+          --border: #232a33;
+          --link: #6ea8fe;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        line-height: 1.65;
+        font-size: 17px;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 4rem 1.25rem 5rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin: 0 0 0.25rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        margin: 2.25rem 0 0.5rem;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin: 0 0 2rem;
+      }
+      p {
+        margin: 0 0 1rem;
+      }
+      ul {
+        margin: 0 0 1rem;
+        padding-left: 1.25rem;
+      }
+      li {
+        margin: 0.25rem 0;
+      }
+      a {
+        color: var(--link);
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.9em;
+        background: color-mix(in srgb, var(--fg) 8%, transparent);
+        padding: 0.1em 0.35em;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy policy</h1>
+      <p class="updated">RTL Helper &middot; Last updated 2026-05-31</p>
+
+      <p>
+        RTL Helper runs locally in Chrome. It fixes right-to-left page text on
+        sites you enable and does not send data off your device.
+      </p>
+
+      <h2>Data stored locally</h2>
+      <p>
+        The extension stores these preferences in
+        <code>chrome.storage.local</code>:
+      </p>
+      <ul>
+        <li>Whether the extension is on.</li>
+        <li>Site origins where RTL Mode is enabled.</li>
+        <li>Site origins where Force RTL Layout is enabled.</li>
+        <li>Popup theme preference: System, Light, or Dark.</li>
+      </ul>
+      <p>The extension does not use <code>chrome.storage.sync</code>.</p>
+
+      <h2>Page text</h2>
+      <p>
+        The content script reads page text in memory to detect Hebrew, Arabic,
+        and other right-to-left characters. It uses that result to set standard
+        HTML <code>dir</code> attributes on matching elements.
+      </p>
+      <p>The extension does not save, copy, transmit, or sell page text.</p>
+
+      <h2>Network and third parties</h2>
+      <p>
+        The extension has no accounts, analytics, cookies, remote database,
+        external API, or third-party service. It makes no network requests.
+      </p>
+
+      <h2>Retention</h2>
+      <p>
+        Local preferences stay on your device until you change them, clear
+        extension data in Chrome, or uninstall the extension.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about privacy? Open an issue on
+        <a href="https://github.com/IIMrRobotII/rtl-helper/issues">GitHub</a>.
+      </p>
+    </main>
+  </body>
+</html>
