@@ -80,4 +80,4 @@ Store, and other restricted pages.
 The extension stores preferences locally and does not save page text. Page text
 is read in memory only to detect right-to-left characters.
 
-See the [Privacy Policy](https://iimrobotii.github.io/RTL-Helper/privacy/).
+See the [Privacy Policy](https://iimrrobotii.github.io/RTL-Helper/privacy/).

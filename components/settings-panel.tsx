@@ -7,6 +7,7 @@ import type { ManagedSite } from "@/lib/storage";
 import { cn, FOCUS_RING } from "@/lib/utils";
 
 const REPO_URL = "https://github.com/IIMrRobotII/RTL-Helper";
+const PRIVACY_URL = "https://iimrrobotii.github.io/RTL-Helper/privacy/";
 
 export function SettingsPanel({
   theme,
@@ -123,6 +124,23 @@ export function SettingsPanel({
         )}
       >
         <span>View source on GitHub</span>
+        <ExternalLink
+          aria-hidden="true"
+          className="size-4 text-muted-foreground"
+        />
+      </a>
+
+      <a
+        href={PRIVACY_URL}
+        target="_blank"
+        rel="noreferrer noopener"
+        className={cn(
+          "flex items-center justify-between rounded-md border border-border px-3 py-2",
+          "text-sm text-foreground transition-colors hover:bg-muted",
+          FOCUS_RING,
+        )}
+      >
+        <span>Privacy policy</span>
         <ExternalLink
           aria-hidden="true"
           className="size-4 text-muted-foreground"
